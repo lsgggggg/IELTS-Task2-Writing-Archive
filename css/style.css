@@ -69,6 +69,8 @@ img { max-width: 100%; }
 .score-arrow { display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; color: #38a169; gap: 6px; margin: 8px 0; }
 
 .score-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: .9rem; }
+.score-table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0; }
+.score-table-wrapper .score-table { margin: 0; min-width: 580px; }
 .score-table th, .score-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
 .score-table th { background: #f7fafc; color: #4a5568; font-weight: 600; font-size: .8rem; text-transform: uppercase; letter-spacing: .5px; }
 .score-table .change { color: #38a169; font-weight: 600; }

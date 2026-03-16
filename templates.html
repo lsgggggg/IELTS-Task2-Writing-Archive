@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>写作模板 — 雅思写作学习档案</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-wrapper">
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">雅思写作学习档案</a>
+    <div class="navbar-links">
+      <a href="index.html">主页</a>
+      <a href="templates.html" class="active">写作模板</a>
+      <a href="vocabulary.html">好词好句</a>
+      <a href="errors.html">常见错误</a>
+    </div>
+  </div>
+</nav>
+
+<main class="page-content">
+  <div class="container">
+
+    <div class="page-header">
+      <h1>写作模板</h1>
+      <p>按题型和话题领域分类的通用写作框架，考前可快速复习和默写</p>
+    </div>
+
+    <!-- 筛选 -->
+    <div class="filter-group" data-group="type">
+      <button class="filter-btn active" onclick="filterItems('type','all')">全部</button>
+      <button class="filter-btn" onclick="filterItems('type','type1')">题型1 · 双边讨论</button>
+    </div>
+
+    <!-- 模板内容 -->
+    <div id="type1-education" data-type="type1" data-essay="2026-03-16_university" style="margin-top:24px;">
+      <div class="card" style="margin-bottom:24px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:16px;">
+          <h2 style="font-size:1.15rem; color:#1a365d;">题型1（双边讨论）× 教育</h2>
+          <div><span class="tag tag-blue">题型1</span> <span class="tag tag-green">教育</span></div>
+        </div>
+
+        <div class="template-block">
+          <h4>开头段模板</h4>
+          <div class="template-text">
+            There is an ongoing debate about <span class="template-placeholder">[Topic]</span>. Some people think <span class="template-placeholder">[View A]</span>, while others believe <span class="template-placeholder">[View B]</span>. This essay will discuss both perspectives before presenting my own viewpoint.
+          </div>
+        </div>
+
+        <div class="template-block">
+          <h4>主体段结构</h4>
+          <div class="template-text">
+            <strong>主体段1（论述 View A）：</strong><br>
+            On the one hand, it is understandable why some people think <span class="template-placeholder">[View A]</span>. The main reason is that <span class="template-placeholder">[Reason 1 + explanation]</span>. For example, <span class="template-placeholder">[Example]</span>. Also, <span class="template-placeholder">[Reason 2 + explanation]</span>.<br><br>
+            <strong>主体段2（论述 View B + 倾向性）：</strong><br>
+            On the other hand, I believe that <span class="template-placeholder">[View B]</span> is also important. First, <span class="template-placeholder">[Reason 1 + explanation]</span>. Secondly, <span class="template-placeholder">[Reason 2 + explanation]</span>. In addition, <span class="template-placeholder">[Reason 3 / supplementary point]</span>.
+          </div>
+        </div>
+
+        <div class="template-block">
+          <h4>结尾段模板</h4>
+          <div class="template-text">
+            In conclusion, although <span class="template-placeholder">[View A]</span> can <span class="template-placeholder">[benefit]</span>, <span class="template-placeholder">[View B]</span> still has its own value. I believe <span class="template-placeholder">[balanced position]</span> to help <span class="template-placeholder">[target group]</span> achieve holistic development.
+          </div>
+        </div>
+
+        <div style="margin-top:16px; padding-top:16px; border-top:1px solid #e2e8f0;">
+          <div style="font-size:.85rem; color:#718096; margin-bottom:8px;">来源文章：</div>
+          <a href="essays/2026-03-16_university.html#revised" style="font-size:.9rem;">2026-03-16 University Education → 查看修改后成文</a>
+        </div>
+
+        <div class="template-note">基于 1 篇文章总结，随着更多同类文章的积累将进一步完善</div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="container">IELTS Writing Study Archive · Powered by AI Review</div>
+</footer>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

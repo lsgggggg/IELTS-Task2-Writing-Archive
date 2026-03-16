@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>雅思写作学习档案</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page-wrapper">
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">雅思写作学习档案</a>
+    <div class="navbar-links">
+      <a href="index.html" class="active">主页</a>
+      <a href="templates.html">写作模板</a>
+      <a href="vocabulary.html">好词好句</a>
+      <a href="errors.html">常见错误</a>
+    </div>
+  </div>
+</nav>
+
+<main class="page-content">
+  <div class="container">
+
+    <div class="page-header">
+      <h1>雅思写作学习档案</h1>
+      <p>记录每一次写作练习的成长轨迹，积累属于你的个人写作素材库</p>
+    </div>
+
+    <!-- 统计概览 -->
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number" data-stat="essay-count">1</div>
+        <div class="stat-label">已修改作文</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-stat="avg-before">6.0</div>
+        <div class="stat-label">平均原文分</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-stat="avg-after">7.0</div>
+        <div class="stat-label">平均修改后分</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-stat="avg-diff">+1.0</div>
+        <div class="stat-label">平均提升</div>
+      </div>
+    </div>
+
+    <!-- 作文列表 -->
+    <h2 style="font-size:1.2rem; color:#1a365d; margin:32px 0 16px;">作文列表</h2>
+    <div class="card-grid">
+      <div class="card" data-essay="2026-03-16_university" data-score-before="6.0" data-score-after="7.0">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+          <a href="essays/2026-03-16_university.html" style="flex:1; color:inherit;">
+            <div style="font-size:.85rem; color:#718096; margin-bottom:6px;">2026-03-16</div>
+            <div style="font-weight:600; color:#2d3748; margin-bottom:8px;">University Education — 大学教育科目选择</div>
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <span class="tag tag-blue">题型1 · 双边讨论</span>
+              <span class="tag tag-green">教育</span>
+            </div>
+          </a>
+          <div style="text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:8px;">
+            <div>
+              <div style="font-size:.8rem; color:#718096;">Overall</div>
+              <div style="font-size:1.1rem;">
+                <span style="color:#e53e3e; font-weight:700;">6.0</span>
+                <span style="color:#a0aec0; margin:0 4px;">→</span>
+                <span style="color:#38a169; font-weight:700;">7.0</span>
+              </div>
+            </div>
+            <button class="delete-btn" onclick="event.stopPropagation(); deleteEssay('2026-03-16_university')">删除</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 功能模块 -->
+    <h2 style="font-size:1.2rem; color:#1a365d; margin:40px 0 16px;">学习工具</h2>
+    <div class="card-grid card-grid-3">
+      <a href="templates.html" class="card card-link" style="border-top:3px solid #3182ce;">
+        <div style="font-size:1.5rem; margin-bottom:8px;">📋</div>
+        <div style="font-weight:700; color:#2d3748; margin-bottom:4px;">写作模板</div>
+        <div style="font-size:.85rem; color:#718096;">按题型和话题分类的通用写作框架，考前可快速复习</div>
+      </a>
+      <a href="vocabulary.html" class="card card-link" style="border-top:3px solid #38a169;">
+        <div style="font-size:1.5rem; margin-bottom:8px;">📝</div>
+        <div style="font-weight:700; color:#2d3748; margin-bottom:4px;">好词好句</div>
+        <div style="font-size:.85rem; color:#718096;">从修改过程中提炼的高级词汇和优秀表达</div>
+      </a>
+      <a href="errors.html" class="card card-link" style="border-top:3px solid #e53e3e;">
+        <div style="font-size:1.5rem; margin-bottom:8px;">⚠️</div>
+        <div style="font-weight:700; color:#2d3748; margin-bottom:4px;">常见错误</div>
+        <div style="font-size:.85rem; color:#718096;">反复出现的语法错误汇总，帮你精准避坑</div>
+      </a>
+    </div>
+
+    <!-- 回收站 -->
+    <div id="recycle-bin-section" style="display:none;">
+      <div class="recycle-bin-header">回收站</div>
+      <p style="font-size:.85rem; color:#a0aec0; margin-bottom:12px;">以下作文已被移入回收站，可随时恢复或彻底删除</p>
+      <div id="recycle-bin-list"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="container">IELTS Writing Study Archive · Powered by AI Review</div>
+</footer>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

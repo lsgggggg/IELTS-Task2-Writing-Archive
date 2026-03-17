@@ -58,6 +58,7 @@ img { max-width: 100%; }
 .tag-green { background: #f0fff4; color: #276749; }
 .tag-purple { background: #faf5ff; color: #6b46c1; }
 .tag-gray { background: #edf2f7; color: #4a5568; }
+.tag-orange { background: #feebc8; color: #c05621; }
 
 /* ========== Score Display ========== */
 .score-comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0; }

@@ -124,6 +124,16 @@ del.vocab { color: #3182ce; text-decoration: line-through; background: #ebf8ff; 
 }
 .suggestion-box .suggestion-title { font-weight: 700; color: #c05621; margin-bottom: 4px; }
 
+/* ========== Word Count ========== */
+.word-count {
+  display: block; text-align: right; font-size: .75rem; color: #a0aec0;
+  margin: -12px 0 16px; font-style: italic;
+}
+.word-count-total {
+  text-align: right; font-size: .85rem; font-weight: 600; color: #4a5568;
+  padding-top: 12px; border-top: 1px dashed #e2e8f0; margin-top: 8px;
+}
+
 /* ========== Essay Text ========== */
 .essay-text { font-size: .95rem; line-height: 2; }
 .essay-text p { margin-bottom: 16px; text-indent: 0; }

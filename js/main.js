@@ -205,7 +205,8 @@ function renderRecycleBin() {
 
 // --- Update Stats ---
 function updateIndexStats() {
-  const essayCards = document.querySelectorAll('.card-grid [data-essay]');
+  const allCards = document.querySelectorAll('.card-grid [data-essay]');
+  const essayCards = Array.from(allCards).filter(c => c.dataset.test !== 'true');
   const countEl = document.querySelector('[data-stat="essay-count"]');
   if (countEl) countEl.textContent = essayCards.length;
 

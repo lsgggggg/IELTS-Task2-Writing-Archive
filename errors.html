@@ -32,27 +32,162 @@
     <div class="card" style="margin-bottom:24px;">
       <h3 style="font-size:1rem; color:#1a365d; margin-bottom:12px;">错误概览</h3>
       <div class="stats-grid">
-        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-types">5</div><div class="stat-label">错误类型</div></div>
-        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-total">6</div><div class="stat-label">错误总数</div></div>
-        <div class="stat-item"><div class="stat-number" data-stat="error-essays">1</div><div class="stat-label">涉及作文</div></div>
+        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-types">12</div><div class="stat-label">错误类型</div></div>
+        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-total">27</div><div class="stat-label">错误总数</div></div>
+        <div class="stat-item"><div class="stat-number" data-stat="error-essays">2</div><div class="stat-label">涉及作文</div></div>
       </div>
     </div>
 
     <!-- 错误类型列表 -->
 
-    <!-- 1. 冠词缺失/误用 -->
-    <div class="accordion-item" data-essay="2026-03-16_university">
+    <!-- 1. 拼写错误 -->
+    <div class="accordion-item" data-essay="2026-03-21_saving_money">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <span>冠词缺失 / 误用 <span class="error-count">— 出现 2 次</span></span>
+        <span>拼写错误 <span class="error-count">— 出现 3 次</span></span>
         <span class="arrow">▶</span>
       </div>
       <div class="accordion-body">
         <div class="error-example">
+          <div><span class="error-wrong">callenges</span> → <span class="error-correct">challenges</span></div>
+          <div class="error-rule">规则：注意 ch- 开头，-llenges 拼写</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">deposite</span> → <span class="error-correct">deposit / savings</span></div>
+          <div class="error-rule">规则："deposit"无末尾 e；此处用"savings"更准确</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">statestics</span> → <span class="error-correct">statistics</span></div>
+          <div class="error-rule">规则：sta-tis-tics，注意中间是 -tis- 而非 -tes-</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. 词性混用 -->
+    <div class="accordion-item" data-essay="2026-03-21_saving_money">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>词性混用（名词/形容词/动词混淆） <span class="error-count">— 出现 3 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">should be awareness of</span> → <span class="error-correct">should be aware of</span></div>
+          <div class="error-rule">规则："awareness"是名词，"aware"是形容词。"be + 形容词"是正确结构，"be + 名词"需要冠词</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">money restrict</span> → <span class="error-correct">financial discipline / restriction</span></div>
+          <div class="error-rule">规则："restrict"是动词，做名词应为"restriction"；此处用"financial discipline"更准确</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">personal bankrupt</span> → <span class="error-correct">personal bankruptcy</span></div>
+          <div class="error-rule">规则："bankrupt"是形容词（go bankrupt），做名词应为"bankruptcy"</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. 主谓不一致 -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>主谓不一致 / 单复数错误 <span class="error-count">— 出现 3 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example" data-essay="2026-03-21_saving_money">
+          <div><span class="error-wrong">which often lead to</span> → <span class="error-correct">which often leads to</span></div>
+          <div class="error-rule">规则：关系代词 which 指代单数名词 "financial management"，谓语应为第三人称单数 "leads"</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-03-21_saving_money">
+          <div><span class="error-wrong">will not only helps</span> → <span class="error-correct">will not only help</span></div>
+          <div class="error-rule">规则：助动词 "will" 后必须接动词原形，不能接第三人称单数形式</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-03-16_university">
+          <div><span class="error-wrong">universities are not only a place...people's mind</span> → <span class="error-correct">universities are not only places...people's minds</span></div>
+          <div class="error-rule">规则：复数主语 "universities" 对应复数表语 "places"；"people's" 后接复数 "minds"</div>
+          <div class="error-source">来源：<a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. 主语缺失/句子不完整 -->
+    <div class="accordion-item" data-essay="2026-03-21_saving_money">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>主语缺失 / 句子不完整 <span class="error-count">— 出现 1 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">statestics show that have better life condition</span> → <span class="error-correct">statistics show that those who maintain a financial reserve tend to enjoy a better quality of life</span></div>
+          <div class="error-rule">规则："that" 引导的宾语从句必须有主语。原句 "show that have" 直接缺少主语，导致句意完全断裂。宾语从句结构：that + 主语 + 谓语 + ...</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. 词汇误用（形近词/意近词混淆） -->
+    <div class="accordion-item" data-essay="2026-03-21_saving_money">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>词汇误用（形近词混淆） <span class="error-count">— 出现 2 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">to due with</span> → <span class="error-correct">to deal with</span></div>
+          <div class="error-rule">规则："due" 意为"到期的/应付的"，"deal with" 意为"处理/应对"。两者拼写相近但意思完全不同</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">you are browser</span> → <span class="error-correct">you browse</span></div>
+          <div class="error-rule">规则："browser" 是名词（浏览器），"browse" 是动词（浏览）。不能用 "are + 名词" 代替动词</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. 不可数名词误用 -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>不可数名词误用 <span class="error-count">— 出现 2 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example" data-essay="2026-03-21_saving_money">
+          <div><span class="error-wrong">knowledges</span> → <span class="error-correct">knowledge</span></div>
+          <div class="error-rule">规则："knowledge" 是不可数名词，不能加 -s。表示多种知识可以说 "areas of knowledge"</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-03-16_university">
+          <div><span class="error-wrong">find a good work</span> → <span class="error-correct">secure desirable employment</span></div>
+          <div class="error-rule">规则："work" 表示"工作"时是不可数名词，不能加 a/an。可用 "job"（可数）或 "employment"（不可数但更正式）替代</div>
+          <div class="error-source">来源：<a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. 冠词缺失/误用 -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>冠词缺失 / 误用 <span class="error-count">— 出现 3 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example" data-essay="2026-03-21_saving_money">
+          <div><span class="error-wrong">Financial crisis</span> → <span class="error-correct">a financial crisis</span></div>
+          <div class="error-rule">规则：可数名词单数前必须有冠词（a/an/the），且普通名词不大写</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-03-16_university">
           <div><span class="error-wrong">in modern world</span> → <span class="error-correct">in the modern world</span></div>
           <div class="error-rule">规则：特指的事物前需加定冠词 "the"，"the modern world" 是固定搭配</div>
           <div class="error-source">来源：<a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></div>
         </div>
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-03-16_university">
           <div><span class="error-wrong">connected with career</span> → <span class="error-correct">connected to their career</span></div>
           <div class="error-rule">规则：可数名词单数前需要冠词或限定词（their/a/the），不能裸用</div>
           <div class="error-source">来源：<a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></div>
@@ -60,7 +195,57 @@
       </div>
     </div>
 
-    <!-- 2. 词性错误 -->
+    <!-- 8. 语序错误 -->
+    <div class="accordion-item" data-essay="2026-03-21_saving_money">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>语序错误 <span class="error-count">— 出现 1 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">that should everyone save</span> → <span class="error-correct">that everyone should save</span></div>
+          <div class="error-rule">规则：宾语从句（that 引导）使用陈述语序（主语 + 谓语），不使用疑问句式的倒装语序</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. 连词/介词误用 -->
+    <div class="accordion-item" data-essay="2026-03-21_saving_money">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>连词 / 介词使用错误 <span class="error-count">— 出现 2 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">This is largely due to that</span> → <span class="error-correct">This is largely because</span></div>
+          <div class="error-rule">规则："due to" 后接名词/名词短语，不能接 that 从句。接从句应使用 "because"</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">even they are just in childhood</span> → <span class="error-correct">even if they are just in childhood</span></div>
+          <div class="error-rule">规则："even" 单独不能引导让步从句，需要 "even if" 或 "even though" 引导</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. 逗号拼接 -->
+    <div class="accordion-item" data-essay="2026-03-21_saving_money">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>逗号拼接（Comma Splice） <span class="error-count">— 出现 1 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">I fully agree with this statement, the following will...</span> → <span class="error-correct">I fully agree with this statement, and the following essay will...</span></div>
+          <div class="error-rule">规则：两个独立分句不能仅用逗号连接（comma splice），需要加连词（and/but/so）或用分号/句号分隔</div>
+          <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. 词性错误（测试文章） -->
     <div class="accordion-item" data-essay="2026-03-16_university">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <span>词性错误 <span class="error-count">— 出现 1 次</span></span>
@@ -75,37 +260,7 @@
       </div>
     </div>
 
-    <!-- 3. 主谓不一致/单复数 -->
-    <div class="accordion-item" data-essay="2026-03-16_university">
-      <div class="accordion-header" onclick="toggleAccordion(this)">
-        <span>主谓不一致 / 单复数错误 <span class="error-count">— 出现 1 次</span></span>
-        <span class="arrow">▶</span>
-      </div>
-      <div class="accordion-body">
-        <div class="error-example">
-          <div><span class="error-wrong">universities are not only a place...people's mind</span> → <span class="error-correct">universities are not only places...people's minds</span></div>
-          <div class="error-rule">规则：复数主语 "universities" 对应复数表语 "places"；"people's" 后接复数 "minds"</div>
-          <div class="error-source">来源：<a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 4. 不可数名词误用 -->
-    <div class="accordion-item" data-essay="2026-03-16_university">
-      <div class="accordion-header" onclick="toggleAccordion(this)">
-        <span>不可数名词误用 <span class="error-count">— 出现 1 次</span></span>
-        <span class="arrow">▶</span>
-      </div>
-      <div class="accordion-body">
-        <div class="error-example">
-          <div><span class="error-wrong">find a good work</span> → <span class="error-correct">secure desirable employment</span></div>
-          <div class="error-rule">规则："work" 表示"工作"时是不可数名词，不能加 a/an。可用 "job"（可数）或 "employment"（不可数但更正式）替代</div>
-          <div class="error-source">来源：<a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5. 代词使用不当 -->
+    <!-- 12. 代词使用不当（测试文章） -->
     <div class="accordion-item" data-essay="2026-03-16_university">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <span>代词使用不当 <span class="error-count">— 出现 1 次</span></span>

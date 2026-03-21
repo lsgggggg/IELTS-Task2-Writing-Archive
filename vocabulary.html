@@ -33,6 +33,7 @@
     <div class="filter-group" data-group="topic">
       <button class="filter-btn active" onclick="filterItems('topic','all')">全部</button>
       <button class="filter-btn" onclick="filterItems('topic','education')">教育</button>
+      <button class="filter-btn" onclick="filterItems('topic','lifestyle')">生活娱乐</button>
     </div>
 
     <!-- 好词/好句切换 -->
@@ -44,6 +45,7 @@
     <!-- 好词 -->
     <div id="vocab-words" class="view-panel active">
 
+      <!-- === 教育话题好词（测试文章） === -->
       <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <span><strong>career-oriented</strong> <span style="color:#718096; font-weight:400;">— 以职业为导向的</span></span>
@@ -64,42 +66,6 @@
         <div class="accordion-body">
           <p><strong>使用场景：</strong>描述就业市场或竞争环境的变化趋势</p>
           <p><strong>原文上下文：</strong>"the job market is <strong>increasingly competitive</strong>"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>secure desirable employment</strong> <span style="color:#718096; font-weight:400;">— 获得理想的工作</span></span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>使用场景：</strong>描述找到好工作的过程，替代简单的 "find a job"</p>
-          <p><strong>原文上下文：</strong>"students need practical skills to <strong>secure desirable employment</strong> after graduation"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>a tangible return on their investment</strong> <span style="color:#718096; font-weight:400;">— 切实的投资回报</span></span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>使用场景：</strong>讨论教育投资的经济回报</p>
-          <p><strong>原文上下文：</strong>"students and parents want to see <strong>a tangible return on their investment</strong>"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>think critically</strong> <span style="color:#718096; font-weight:400;">— 批判性思考</span></span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>使用场景：</strong>描述高等教育培养的核心能力</p>
-          <p><strong>原文上下文：</strong>"help students <strong>think critically</strong> and develop a deeper understanding of society"</p>
           <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
         </div>
       </div>
@@ -140,59 +106,109 @@
         </div>
       </div>
 
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
+      <!-- === 生活娱乐话题好词（真实文章） === -->
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>a diverse range of</strong> <span style="color:#718096; font-weight:400;">— 多样化的</span></span>
+          <span><strong>cope with</strong> <span style="color:#718096; font-weight:400;">— 应对、处理</span></span>
           <span class="arrow">▶</span>
         </div>
         <div class="accordion-body">
-          <p><strong>使用场景：</strong>描述科目、选择、观点等的多样性，替代 "different kinds of"</p>
-          <p><strong>原文上下文：</strong>"studying <strong>a diverse range of</strong> subjects"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
+          <p><strong>使用场景：</strong>描述应对挑战或困难的能力，替代简单的 "face" 或 "deal with"</p>
+          <p><strong>原文上下文：</strong>"saving money enables people to <strong>cope with</strong> social changes and unexpected challenges"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
         </div>
       </div>
 
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>applicable to</strong> <span style="color:#718096; font-weight:400;">— 适用于</span></span>
+          <span><strong>financial reserve</strong> <span style="color:#718096; font-weight:400;">— 财务储备</span></span>
           <span class="arrow">▶</span>
         </div>
         <div class="accordion-body">
-          <p><strong>使用场景：</strong>描述知识或技能的应用范围，替代简单的 "used in"</p>
-          <p><strong>原文上下文：</strong>"not directly <strong>applicable to</strong> their work"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
+          <p><strong>使用场景：</strong>描述存款或储蓄金额，替代简单的 "savings" 或 "money"</p>
+          <p><strong>原文上下文：</strong>"those who maintain a <strong>financial reserve</strong> tend to enjoy a better quality of life"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
         </div>
       </div>
 
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>positively reshape their career path</strong> <span style="color:#718096; font-weight:400;">— 积极重塑职业道路</span></span>
+          <span><strong>economic downturn</strong> <span style="color:#718096; font-weight:400;">— 经济衰退</span></span>
           <span class="arrow">▶</span>
         </div>
         <div class="accordion-body">
-          <p><strong>使用场景：</strong>描述学习新领域对职业发展的积极影响</p>
-          <p><strong>原文上下文：</strong>"this can even <strong>positively reshape their career path</strong>"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
+          <p><strong>使用场景：</strong>描述经济不景气时期，金融/经济话题高频词汇</p>
+          <p><strong>原文上下文：</strong>"those who lack adequate savings during an <strong>economic downturn</strong>"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
         </div>
       </div>
 
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>job prospects</strong> <span style="color:#718096; font-weight:400;">— 就业前景</span></span>
+          <span><strong>financial cushion</strong> <span style="color:#718096; font-weight:400;">— 财务缓冲</span></span>
           <span class="arrow">▶</span>
         </div>
         <div class="accordion-body">
-          <p><strong>使用场景：</strong>讨论就业机会和职业前景，替代 "job opportunities"</p>
-          <p><strong>原文上下文：</strong>"can improve students' <strong>job prospects</strong>"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
+          <p><strong>使用场景：</strong>形象描述储蓄提供的安全保障，比喻用法，适合提升词汇分</p>
+          <p><strong>原文上下文：</strong>"This <strong>financial cushion</strong> allows people to sustain their basic needs without falling into debt"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>financial discipline</strong> <span style="color:#718096; font-weight:400;">— 财务自律</span></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>描述理财意识和自我约束，金融话题核心表达</p>
+          <p><strong>原文上下文：</strong>"those who lack the awareness of <strong>financial discipline</strong> may face the risk of personal bankruptcy"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>personal bankruptcy</strong> <span style="color:#718096; font-weight:400;">— 个人破产</span></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>描述过度消费的严重后果，用于反面论证</p>
+          <p><strong>原文上下文：</strong>"may face the risk of <strong>personal bankruptcy</strong> in the future due to uncontrolled spending habits"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>quality of life</strong> <span style="color:#718096; font-weight:400;">— 生活质量</span></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>描述生活水平，替代简单的 "life condition"，万能高频表达</p>
+          <p><strong>原文上下文：</strong>"tend to enjoy a better <strong>quality of life</strong>"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>readily accessible</strong> <span style="color:#718096; font-weight:400;">— 易于获取的</span></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>描述信息或资源容易获得，适用于科技/互联网相关论证</p>
+          <p><strong>原文上下文：</strong>"financial information is <strong>readily accessible</strong>"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
         </div>
       </div>
 
     </div>
 
     <!-- 好句 -->
-    <div id="vocab-sentences" class="view-panel" data-topic="education">
+    <div id="vocab-sentences" class="view-panel">
 
+      <!-- 教育话题好句（测试文章） -->
       <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <span><strong>There is an ongoing debate about [Topic].</strong></span>
@@ -215,25 +231,52 @@
         </div>
       </div>
 
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
+      <!-- 生活娱乐话题好句（真实文章） -->
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>Universities are not only places for job training, but also places to develop people's minds.</strong></span>
+          <span><strong>Saving money enables people to cope with social changes and unexpected challenges more effectively.</strong></span>
           <span class="arrow">▶</span>
         </div>
         <div class="accordion-body">
-          <p><strong>使用场景：</strong>论述大学教育的多元价值</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
+          <p><strong>使用场景：</strong>论述储蓄/财务准备的好处，适用于题型3的主体段论点句</p>
+          <p><strong>句式分析：</strong>主语（动名词短语）+ enables sb. to do sth. + 补充状语（more effectively）</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
         </div>
       </div>
 
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
         <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>A balanced education is preferable because it can provide both professional knowledge and a broader understanding of the world.</strong></span>
+          <span><strong>This financial cushion allows people to sustain their basic needs without falling into debt, which is particularly crucial for young people who are just entering the workforce.</strong></span>
           <span class="arrow">▶</span>
         </div>
         <div class="accordion-body">
-          <p><strong>使用场景：</strong>论述平衡教育的好处，适用于教育类结论段</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
+          <p><strong>使用场景：</strong>从储蓄论点延伸到特定人群（年轻人），回应题目限定词</p>
+          <p><strong>句式分析：</strong>主句 + without doing（让步）+ which 非限定性从句（补充说明）+ who 定语从句（修饰 young people）——三层嵌套展示句式多样性</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>The process of saving encourages individuals to research various investment options, thereby expanding their financial knowledge.</strong></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>论述储蓄如何促进理财学习，适用于金融/教育相关论证</p>
+          <p><strong>句式分析：</strong>主句 + thereby doing（分词短语表结果）——高级连接方式，替代简单的 "so" 或 "and"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>Developing this habit will not only help people face financial challenges with greater confidence, but also offer them a valuable opportunity to learn how to manage their finances wisely.</strong></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>结论段的总结表态，适用于题型3结尾收束全文</p>
+          <p><strong>句式分析：</strong>not only...but also... 并列结构 + 动名词作主语 + how to 从句——典型的高分结尾句式</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></p>
         </div>
       </div>
 

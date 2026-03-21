@@ -29,22 +29,22 @@
       <p>记录每一次写作练习的成长轨迹，积累属于你的个人写作素材库</p>
     </div>
 
-    <!-- 统计概览 -->
+    <!-- 统计概览（仅统计真实文章） -->
     <div class="stats-grid">
       <div class="stat-item">
         <div class="stat-number" data-stat="essay-count">1</div>
         <div class="stat-label">已修改作文</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" data-stat="avg-before">6.0</div>
+        <div class="stat-number" data-stat="avg-before">4.5</div>
         <div class="stat-label">平均原文分</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" data-stat="avg-after">7.0</div>
+        <div class="stat-number" data-stat="avg-after">6.5</div>
         <div class="stat-label">平均修改后分</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number" data-stat="avg-diff">+1.0</div>
+        <div class="stat-number" data-stat="avg-diff">+2.0</div>
         <div class="stat-label">平均提升</div>
       </div>
     </div>
@@ -52,7 +52,32 @@
     <!-- 作文列表 -->
     <h2 style="font-size:1.2rem; color:#1a365d; margin:32px 0 16px;">作文列表</h2>
     <div class="card-grid">
-      <div class="card" data-essay="2026-03-16_university" data-score-before="6.0" data-score-after="7.0">
+
+      <div class="card" data-essay="2026-03-21_saving_money" data-score-before="4.5" data-score-after="6.5">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
+          <a href="essays/2026-03-21_saving_money.html" style="flex:1; color:inherit;">
+            <div style="font-size:.85rem; color:#718096; margin-bottom:6px;">2026-03-21</div>
+            <div style="font-weight:600; color:#2d3748; margin-bottom:8px;">Saving Money — 储蓄的重要性</div>
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <span class="tag tag-blue">题型3 · 同意与否</span>
+              <span class="tag tag-green">生活娱乐</span>
+            </div>
+          </a>
+          <div style="text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:8px;">
+            <div>
+              <div style="font-size:.8rem; color:#718096;">Overall</div>
+              <div style="font-size:1.1rem;">
+                <span style="color:#e53e3e; font-weight:700;">4.5</span>
+                <span style="color:#a0aec0; margin:0 4px;">→</span>
+                <span style="color:#38a169; font-weight:700;">6.5</span>
+              </div>
+            </div>
+            <button class="delete-btn" onclick="event.stopPropagation(); deleteEssay('2026-03-21_saving_money')">删除</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-essay="2026-03-16_university" data-score-before="6.0" data-score-after="7.0" data-test="true">
         <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:8px;">
           <a href="essays/2026-03-16_university.html" style="flex:1; color:inherit;">
             <div style="font-size:.85rem; color:#718096; margin-bottom:6px;">2026-03-16</div>
@@ -76,6 +101,7 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <!-- 功能模块 -->

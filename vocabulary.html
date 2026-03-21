@@ -32,7 +32,6 @@
     <!-- 话题筛选 -->
     <div class="filter-group" data-group="topic">
       <button class="filter-btn active" onclick="filterItems('topic','all')">全部</button>
-      <button class="filter-btn" onclick="filterItems('topic','education')">教育</button>
       <button class="filter-btn" onclick="filterItems('topic','lifestyle')">生活娱乐</button>
     </div>
 
@@ -45,68 +44,7 @@
     <!-- 好词 -->
     <div id="vocab-words" class="view-panel active">
 
-      <!-- === 教育话题好词（测试文章） === -->
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>career-oriented</strong> <span style="color:#718096; font-weight:400;">— 以职业为导向的</span></span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>使用场景：</strong>描述与职业直接相关的科目或教育方向</p>
-          <p><strong>原文上下文：</strong>"students should only pursue <strong>career-oriented</strong> subjects for their future jobs"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>increasingly competitive</strong> <span style="color:#718096; font-weight:400;">— 日益激烈的</span></span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>使用场景：</strong>描述就业市场或竞争环境的变化趋势</p>
-          <p><strong>原文上下文：</strong>"the job market is <strong>increasingly competitive</strong>"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>interdisciplinary knowledge</strong> <span style="color:#718096; font-weight:400;">— 跨学科知识</span></span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>使用场景：</strong>描述跨领域知识的重要性，教育话题高分核心词汇</p>
-          <p><strong>原文上下文：</strong>"many challenges require <strong>interdisciplinary knowledge</strong>"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>well-rounded individuals</strong> <span style="color:#718096; font-weight:400;">— 全面发展的人才</span></span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>使用场景：</strong>描述教育目标——培养综合素质人才</p>
-          <p><strong>原文上下文：</strong>"not only more employable, but also more <strong>well-rounded individuals</strong>"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>holistic development</strong> <span style="color:#718096; font-weight:400;">— 全面发展</span></span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>使用场景：</strong>描述教育的终极目标，教育领域专业术语</p>
-          <p><strong>原文上下文：</strong>"help students achieve <strong>holistic development</strong>"</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
-        </div>
-      </div>
-
-      <!-- === 生活娱乐话题好词（真实文章） === -->
+      <!-- === 生活娱乐话题好词 === -->
       <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <span><strong>cope with</strong> <span style="color:#718096; font-weight:400;">— 应对、处理</span></span>
@@ -208,30 +146,7 @@
     <!-- 好句 -->
     <div id="vocab-sentences" class="view-panel">
 
-      <!-- 教育话题好句（测试文章） -->
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>There is an ongoing debate about [Topic].</strong></span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>使用场景：</strong>学术议论文开头引入话题，替代 "Nowadays, many people..."</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
-        </div>
-      </div>
-
-      <div class="accordion-item" data-topic="education" data-essay="2026-03-16_university">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <span><strong>This essay will discuss both perspectives before presenting my own viewpoint.</strong></span>
-          <span class="arrow">▶</span>
-        </div>
-        <div class="accordion-body">
-          <p><strong>使用场景：</strong>双边讨论题的开头段结尾，表明写作意图</p>
-          <p class="error-source"><strong>来源：</strong><a href="essays/2026-03-16_university.html">2026-03-16 University Education</a></p>
-        </div>
-      </div>
-
-      <!-- 生活娱乐话题好句（真实文章） -->
+      <!-- 生活娱乐话题好句 -->
       <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <span><strong>Saving money enables people to cope with social changes and unexpected challenges more effectively.</strong></span>

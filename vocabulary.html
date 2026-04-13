@@ -33,6 +33,7 @@
     <div class="filter-group" data-group="topic">
       <button class="filter-btn active" onclick="filterItems('topic','all')">全部</button>
       <button class="filter-btn" onclick="filterItems('topic','lifestyle')">生活娱乐</button>
+      <button class="filter-btn" onclick="filterItems('topic','technology')">科技</button>
     </div>
 
     <!-- 好词/好句切换 -->
@@ -43,6 +44,79 @@
 
     <!-- 好词 -->
     <div id="vocab-words" class="view-panel active">
+
+      <!-- === 科技话题好词 === -->
+      <div class="accordion-item" data-topic="technology" data-essay="2026-04-13_robots">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>opponents of</strong> <span style="color:#718096; font-weight:400;">— ……的反对者</span></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>双边讨论题主体段引入反方观点的固定表达，替代 "people who disagree"</p>
+          <p><strong>原文上下文：</strong>"<strong>opponents of</strong> robots would argue that these machines may result in people becoming increasingly lazy"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="technology" data-essay="2026-04-13_robots">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>repetitive work</strong> <span style="color:#718096; font-weight:400;">— 重复性工作</span></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>描述机械化、重复性的劳动，科技/工作话题高频词，替代 "repeated work"</p>
+          <p><strong>原文上下文：</strong>"robots can help humans complete <strong>repetitive work</strong> efficiently"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="technology" data-essay="2026-04-13_robots">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>let alone</strong> <span style="color:#718096; font-weight:400;">— 更不用说（递进否定）</span></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>否定递进的高级连接词，用于反驳或论证强化，替代 "not to mention"</p>
+          <p><strong>原文上下文：</strong>"they cannot function without human prompts, <strong>let alone</strong> replace human creativity"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="technology" data-essay="2026-04-13_robots">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>physical robot / AI agent</strong> <span style="color:#718096; font-weight:400;">— 实体机器人 / AI 智能体</span></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>科技话题区分硬件型与软件型机器人的精准术语，比 "entity robot" 等自创词更标准</p>
+          <p><strong>原文上下文：</strong>"people can purchase a <strong>physical robot</strong> that resembles a real person...download an <strong>AI agent</strong> that lives on their laptop"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="technology" data-essay="2026-04-13_robots">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>a vast amount of</strong> <span style="color:#718096; font-weight:400;">— 大量的（修饰不可数名词）</span></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>修饰 information, data, knowledge 等不可数名词，替代 "plenty of / a lot of"</p>
+          <p><strong>原文上下文：</strong>"capable of memorizing <strong>a vast amount of</strong> complex information"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="technology" data-essay="2026-04-13_robots">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>maintain the view that</strong> <span style="color:#718096; font-weight:400;">— 坚持认为</span></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>结论段坚定表态的地道搭配，替代 "sustain the point that" 等错误表达</p>
+          <p><strong>原文上下文：</strong>"I still <strong>maintain the view that</strong> the benefits of using robots outweigh the drawbacks"</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></p>
+        </div>
+      </div>
 
       <!-- === 生活娱乐话题好词 === -->
       <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">
@@ -145,6 +219,55 @@
 
     <!-- 好句 -->
     <div id="vocab-sentences" class="view-panel">
+
+      <!-- 科技话题好句 -->
+      <div class="accordion-item" data-topic="technology" data-essay="2026-04-13_robots">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>This essay will discuss both perspectives before presenting my opinion that ...</strong></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>题型1（双边讨论）开头段的立场表态万能句式</p>
+          <p><strong>句式分析：</strong>主句 + before + 动名词短语——用 "before" 连接比并列的 "and" 更有逻辑层次，体现"先讨论后表态"的结构</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="technology" data-essay="2026-04-13_robots">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>This perspective is undoubtedly reasonable to some extent. However, this argument overlooks ...</strong></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>双边讨论题"让步+反驳"的过渡句式，展示批判性思维</p>
+          <p><strong>句式分析：</strong>先承认对方合理性（to some extent 体现分寸）→ However 转折 → overlooks 指出盲点——高分批判性结构</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="technology" data-essay="2026-04-13_robots">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>The more knowledgeable users are, the more intelligent and useful robots and AI will become.</strong></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>科技话题中论证"人类主导 vs 技术辅助"关系的万能句式</p>
+          <p><strong>句式分析：</strong>"The more...the more..."比较级并列结构——典型的高分句式，适用于各种因果/相关关系</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></p>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-topic="technology" data-essay="2026-04-13_robots">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <span><strong>I still maintain the view that the benefits of using X outweigh the drawbacks.</strong></span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-body">
+          <p><strong>使用场景：</strong>题型1/题型4（利弊类）结论段的万能收束句</p>
+          <p><strong>句式分析：</strong>"maintain the view that + 宾语从句" + "outweigh" 高级动词——同时兼顾立场表态与比较论证</p>
+          <p class="error-source"><strong>来源：</strong><a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></p>
+        </div>
+      </div>
 
       <!-- 生活娱乐话题好句 -->
       <div class="accordion-item" data-topic="lifestyle" data-essay="2026-03-21_saving_money">

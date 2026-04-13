@@ -32,9 +32,9 @@
     <div class="card" style="margin-bottom:24px;">
       <h3 style="font-size:1rem; color:#1a365d; margin-bottom:12px;">错误概览</h3>
       <div class="stats-grid">
-        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-types">10</div><div class="stat-label">错误类型</div></div>
-        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-total">17</div><div class="stat-label">错误总数</div></div>
-        <div class="stat-item"><div class="stat-number" data-stat="error-essays">1</div><div class="stat-label">涉及作文</div></div>
+        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-types">13</div><div class="stat-label">错误类型</div></div>
+        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-total">39</div><div class="stat-label">错误总数</div></div>
+        <div class="stat-item"><div class="stat-number" data-stat="error-essays">2</div><div class="stat-label">涉及作文</div></div>
       </div>
     </div>
 
@@ -43,7 +43,7 @@
     <!-- 1. 拼写错误 -->
     <div class="accordion-item" data-essay="2026-03-21_saving_money">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <span>拼写错误 <span class="error-count">— 出现 3 次</span></span>
+        <span>拼写错误 <span class="error-count">— 出现 13 次</span></span>
         <span class="arrow">▶</span>
       </div>
       <div class="accordion-body">
@@ -62,13 +62,33 @@
           <div class="error-rule">规则：sta-tis-tics，注意中间是 -tis- 而非 -tes-</div>
           <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
         </div>
+        <div class="error-example">
+          <div><span class="error-wrong">argure / eassay / reslult</span> → <span class="error-correct">argue / essay / result</span></div>
+          <div class="error-rule">规则：常见基础词拼写错误——argue 只有 -ue 结尾；essay 单 s；result 无中间 s</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">lazzy / controled / eventrually</span> → <span class="error-correct">lazy / controlled / eventually</span></div>
+          <div class="error-rule">规则：双写辅音易错点——lazy 单 z；controlled 双 ll（英式）；eventually 单 r 双 ll</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">orgnize / artical / themselfs</span> → <span class="error-correct">organize / article / themselves</span></div>
+          <div class="error-rule">规则：organize 有 a 不可漏；article 结尾 -cle 非 -cal；themselves 复数 -ves 不是 -fs</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">will never be tried</span> → <span class="error-correct">never gets tired</span></div>
+          <div class="error-rule">规则：tired（疲倦）vs tried（尝试）——形近词拼写和意义完全不同，注意区分</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
       </div>
     </div>
 
     <!-- 2. 词性混用 -->
     <div class="accordion-item" data-essay="2026-03-21_saving_money">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <span>词性混用（名词/形容词/动词混淆） <span class="error-count">— 出现 3 次</span></span>
+        <span>词性混用（名词/形容词/动词混淆） <span class="error-count">— 出现 6 次</span></span>
         <span class="arrow">▶</span>
       </div>
       <div class="accordion-body">
@@ -87,13 +107,28 @@
           <div class="error-rule">规则："bankrupt"是形容词（go bankrupt），做名词应为"bankruptcy"</div>
           <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
         </div>
+        <div class="error-example">
+          <div><span class="error-wrong">considerable vital</span> → <span class="error-correct">considerably vital</span></div>
+          <div class="error-rule">规则：修饰形容词需用副词。形容词 considerable 不能修饰形容词 vital，应改为副词 considerably</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">the more intelligence and useful</span> → <span class="error-correct">the more intelligent and useful</span></div>
+          <div class="error-rule">规则：intelligence 是名词（智力），intelligent 是形容词（聪明的）。与并列的 useful（形容词）一致需用 intelligent</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">may bring some potential dangerous</span> → <span class="error-correct">may bring some potential dangers</span></div>
+          <div class="error-rule">规则：dangerous 是形容词（危险的），作 bring 的宾语需要名词 dangers（危险/危害）</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
       </div>
     </div>
 
     <!-- 3. 主谓不一致 -->
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <span>主谓不一致 / 单复数错误 <span class="error-count">— 出现 2 次</span></span>
+        <span>主谓不一致 / 单复数错误 <span class="error-count">— 出现 5 次</span></span>
         <span class="arrow">▶</span>
       </div>
       <div class="accordion-body">
@@ -106,6 +141,101 @@
           <div><span class="error-wrong">will not only helps</span> → <span class="error-correct">will not only help</span></div>
           <div class="error-rule">规则：助动词 "will" 后必须接动词原形，不能接第三人称单数形式</div>
           <div class="error-source">来源：<a href="essays/2026-03-21_saving_money.html">2026-03-21 Saving Money</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-13_robots">
+          <div><span class="error-wrong">this perspective are undoubtedly reasonable</span> → <span class="error-correct">this perspective is undoubtedly reasonable</span></div>
+          <div class="error-rule">规则：this + 单数名词 perspective 为单数主语，谓语应为 is 而非 are</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-13_robots">
+          <div><span class="error-wrong">the more knowledgeable the user are</span> → <span class="error-correct">the more knowledgeable users are</span></div>
+          <div class="error-rule">规则：user 单数与 are 不一致。泛指时应使用复数 users 以匹配 are</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-13_robots">
+          <div><span class="error-wrong">inventions of robots faces many challenges</span> → <span class="error-correct">the invention of robots faces many challenges</span></div>
+          <div class="error-rule">规则：复数主语 inventions 与单数动词 faces 不匹配。此处应用单数 the invention 与 faces 一致</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 新增：所有格错误 -->
+    <div class="accordion-item" data-essay="2026-04-13_robots">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>所有格错误（缺失或形式错误） <span class="error-count">— 出现 4 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">robots's capability</span> → <span class="error-correct">robots' capabilities</span></div>
+          <div class="error-rule">规则：复数名词以 s 结尾时，所有格只加撇号——robots'，不是 robots's</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">humans prompts / humans knowledge</span> → <span class="error-correct">human prompts / human knowledge</span></div>
+          <div class="error-rule">规则：名词作定语（形容词化）时用单数原形——human prompts（人类提示）。若表所属关系应用 humans'</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">people and society's development</span> → <span class="error-correct">the development of individuals and society</span></div>
+          <div class="error-rule">规则：A and B's development 所有格结构歧义——究竟是 B 的，还是 A 和 B 共同的？改为 of 结构更清晰</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 新增：词汇误用（动词搭配/近义词） -->
+    <div class="accordion-item" data-essay="2026-04-13_robots">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>词汇误用（动词搭配/非标准词） <span class="error-count">— 出现 4 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">relay on human knowledge</span> → <span class="error-correct">rely on human knowledge</span></div>
+          <div class="error-rule">规则：rely on（依赖）vs relay（传递/转播）——形近词混淆，rely 才是"依靠"的意思</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">I still sustain the point that</span> → <span class="error-correct">I still maintain the view that</span></div>
+          <div class="error-rule">规则：sustain（维持、支撑）不能搭配 point（观点）；表达"坚持观点"应用 maintain / hold the view that</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">an entitative robots</span> → <span class="error-correct">a physical robot</span></div>
+          <div class="error-rule">规则：entitative 非标准英语词汇——想表达"实体的"应用 physical/tangible</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">humans lack of their creativity</span> → <span class="error-correct">people lose their creativity</span></div>
+          <div class="error-rule">规则：lack 作动词时直接接宾语，不接 of（lack sth.）；作名词时才用 a lack of sth.。此处用 lose 更准确</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 新增：句子结构破碎 -->
+    <div class="accordion-item" data-essay="2026-04-13_robots">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>句子结构破碎（残句/粘连句） <span class="error-count">— 出现 3 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">supporters of robots may bring harmful would argure that...</span> → <span class="error-correct">opponents of robots would argue that...</span></div>
+          <div class="error-rule">规则：原句有两个谓语（may bring / would argue）且句意矛盾。检查"一主语一谓语"原则；且"supporters"（支持者）与后文反对观点冲突</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">Whereas the people who..., will greatly slow down...</span> → <span class="error-correct">In contrast, those who..., will significantly slow down...</span></div>
+          <div class="error-rule">规则：Whereas 是连词（表对比），不能用作独立句首。句首对比应用 In contrast / On the other hand / However</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">more impossible to take place of humans</span> → <span class="error-correct">let alone replace humans</span></div>
+          <div class="error-rule">规则：impossible 是绝对概念，无比较级（不能 more impossible）；且 take place 意为"发生"，"代替"是 take the place of（需定冠词 the）</div>
+          <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
         </div>
       </div>
     </div>

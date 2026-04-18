@@ -32,9 +32,9 @@
     <div class="card" style="margin-bottom:24px;">
       <h3 style="font-size:1rem; color:#1a365d; margin-bottom:12px;">错误概览</h3>
       <div class="stats-grid">
-        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-types">15</div><div class="stat-label">错误类型</div></div>
-        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-total">73</div><div class="stat-label">错误总数</div></div>
-        <div class="stat-item"><div class="stat-number" data-stat="error-essays">3</div><div class="stat-label">涉及作文</div></div>
+        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-types">17</div><div class="stat-label">错误类型</div></div>
+        <div class="stat-item"><div class="stat-number" style="color:#e53e3e;" data-stat="error-total">85</div><div class="stat-label">错误总数</div></div>
+        <div class="stat-item"><div class="stat-number" data-stat="error-essays">4</div><div class="stat-label">涉及作文</div></div>
       </div>
     </div>
 
@@ -158,7 +158,7 @@
     <!-- 3. 主谓不一致 -->
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <span>主谓不一致 / 单复数错误 <span class="error-count">— 出现 10 次</span></span>
+        <span>主谓不一致 / 单复数错误 <span class="error-count">— 出现 13 次</span></span>
         <span class="arrow">▶</span>
       </div>
       <div class="accordion-body">
@@ -207,60 +207,95 @@
           <div class="error-rule">规则：泛指多种兴趣、天赋、问题时应使用复数形式 interests/talents/problems</div>
           <div class="error-source">来源：<a href="essays/2026-04-14_children_freedom.html">2026-04-14 Children Freedom</a></div>
         </div>
+        <div class="error-example" data-essay="2026-04-18_uni-sexual_school">
+          <div><span class="error-wrong">the personal development of men and women are based on</span> → <span class="error-correct">the personal development of men and women is based on</span></div>
+          <div class="error-rule">规则：主语中心词为单数 "the personal development"，谓语应用 is；不要被后置介词短语 "of men and women" 中的复数迷惑</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-18_uni-sexual_school">
+          <div><span class="error-wrong">a boy who want / a girl who want</span> → <span class="error-correct">a boy who wants / a girl who wants</span></div>
+          <div class="error-rule">规则：定语从句的谓语动词需与先行词一致。a boy / a girl 为第三人称单数，动词应加 s：wants</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-18_uni-sexual_school">
+          <div><span class="error-wrong">less competitive and stereotype</span> → <span class="error-correct">less competition and fewer stereotypes</span></div>
+          <div class="error-rule">规则：①competitive 是形容词→名词应为 competition；②stereotype 为可数名词，"更少"意义下用复数 stereotypes 并搭配 fewer（不是 less）</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
       </div>
     </div>
 
     <!-- 新增：所有格错误 -->
-    <div class="accordion-item" data-essay="2026-04-13_robots">
+    <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <span>所有格错误（缺失或形式错误） <span class="error-count">— 出现 4 次</span></span>
+        <span>所有格错误（缺失或形式错误） <span class="error-count">— 出现 5 次</span></span>
         <span class="arrow">▶</span>
       </div>
       <div class="accordion-body">
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-04-13_robots">
           <div><span class="error-wrong">robots's capability</span> → <span class="error-correct">robots' capabilities</span></div>
           <div class="error-rule">规则：复数名词以 s 结尾时，所有格只加撇号——robots'，不是 robots's</div>
           <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
         </div>
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-04-13_robots">
           <div><span class="error-wrong">humans prompts / humans knowledge</span> → <span class="error-correct">human prompts / human knowledge</span></div>
           <div class="error-rule">规则：名词作定语（形容词化）时用单数原形——human prompts（人类提示）。若表所属关系应用 humans'</div>
           <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
         </div>
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-04-13_robots">
           <div><span class="error-wrong">people and society's development</span> → <span class="error-correct">the development of individuals and society</span></div>
           <div class="error-rule">规则：A and B's development 所有格结构歧义——究竟是 B 的，还是 A 和 B 共同的？改为 of 结构更清晰</div>
           <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-18_uni-sexual_school">
+          <div><span class="error-wrong">both gender's students</span> → <span class="error-correct">students of both sexes</span></div>
+          <div class="error-rule">规则：①"both gender's" 所有格形式错误——gender 后应加 s 再加撇号 (genders')，或直接改为 of 结构；②术语 gender→sex 更标准</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
         </div>
       </div>
     </div>
 
     <!-- 新增：动词形式错误 -->
-    <div class="accordion-item" data-essay="2026-04-14_children_freedom">
+    <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <span>动词形式错误（不定式/时态/进行时） <span class="error-count">— 出现 4 次</span></span>
+        <span>动词形式错误（不定式/时态/进行时/情态动词后接） <span class="error-count">— 出现 7 次</span></span>
         <span class="arrow">▶</span>
       </div>
       <div class="accordion-body">
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-04-14_children_freedom">
           <div><span class="error-wrong">enables the youngsters earlier cultivate</span> → <span class="error-correct">enables youngsters to cultivate...earlier</span></div>
           <div class="error-rule">规则：enable sb. to do sth. 是固定搭配，必须有 to；副词 earlier 应放在动宾短语之后</div>
           <div class="error-source">来源：<a href="essays/2026-04-14_children_freedom.html">2026-04-14 Children Freedom</a></div>
         </div>
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-04-14_children_freedom">
           <div><span class="error-wrong">are do a puzzle</span> → <span class="error-correct">are doing a puzzle</span></div>
           <div class="error-rule">规则：进行时态结构为 be + doing，非 be + do</div>
           <div class="error-source">来源：<a href="essays/2026-04-14_children_freedom.html">2026-04-14 Children Freedom</a></div>
         </div>
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-04-14_children_freedom">
           <div><span class="error-wrong">encourage students have their own thought</span> → <span class="error-correct">encourages students to have their own thoughts</span></div>
           <div class="error-rule">规则：encourage sb. to do sth. 是固定搭配，必须有 to；thought 泛指应用复数 thoughts</div>
           <div class="error-source">来源：<a href="essays/2026-04-14_children_freedom.html">2026-04-14 Children Freedom</a></div>
         </div>
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-04-14_children_freedom">
           <div><span class="error-wrong">than they grew up</span> → <span class="error-correct">than when they grow up</span></div>
           <div class="error-rule">规则：①缺少时间连词 when 引导从句；②表达一般性规律应用一般现在时 grow，非过去时 grew</div>
           <div class="error-source">来源：<a href="essays/2026-04-14_children_freedom.html">2026-04-14 Children Freedom</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-18_uni-sexual_school">
+          <div><span class="error-wrong">things they can't doing</span> → <span class="error-correct">things they cannot do</span></div>
+          <div class="error-rule">规则：情态动词 can / cannot 之后必须接动词原形，不能接 doing。这是高频错误——考试时看到"情态动词"第一反应就是"接原形"</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-18_uni-sexual_school">
+          <div><span class="error-wrong">shying to do</span> → <span class="error-correct">are too shy to do</span></div>
+          <div class="error-rule">规则：shy 是形容词"害羞的"，不能加 -ing 作动词使用。表达"害羞到不敢做某事"固定结构为 be too shy to do sth.</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-18_uni-sexual_school">
+          <div><span class="error-wrong">help difference sexual people developing</span> → <span class="error-correct">help students of different sexes develop</span></div>
+          <div class="error-rule">规则：help sb. (to) do sth. 固定搭配——help 之后的动词用原形 develop，不是 developing；此处 "to" 可省略</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
         </div>
       </div>
     </div>
@@ -326,26 +361,86 @@
     </div>
 
     <!-- 新增：句子结构破碎 -->
-    <div class="accordion-item" data-essay="2026-04-13_robots">
+    <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <span>句子结构破碎（残句/粘连句） <span class="error-count">— 出现 3 次</span></span>
+        <span>句子结构破碎（残句/粘连句/句子碎片） <span class="error-count">— 出现 6 次</span></span>
         <span class="arrow">▶</span>
       </div>
       <div class="accordion-body">
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-04-13_robots">
           <div><span class="error-wrong">supporters of robots may bring harmful would argure that...</span> → <span class="error-correct">opponents of robots would argue that...</span></div>
           <div class="error-rule">规则：原句有两个谓语（may bring / would argue）且句意矛盾。检查"一主语一谓语"原则；且"supporters"（支持者）与后文反对观点冲突</div>
           <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
         </div>
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-04-13_robots">
           <div><span class="error-wrong">Whereas the people who..., will greatly slow down...</span> → <span class="error-correct">In contrast, those who..., will significantly slow down...</span></div>
           <div class="error-rule">规则：Whereas 是连词（表对比），不能用作独立句首。句首对比应用 In contrast / On the other hand / However</div>
           <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
         </div>
-        <div class="error-example">
+        <div class="error-example" data-essay="2026-04-13_robots">
           <div><span class="error-wrong">more impossible to take place of humans</span> → <span class="error-correct">let alone replace humans</span></div>
           <div class="error-rule">规则：impossible 是绝对概念，无比较级（不能 more impossible）；且 take place 意为"发生"，"代替"是 take the place of（需定冠词 the）</div>
           <div class="error-source">来源：<a href="essays/2026-04-13_robots.html">2026-04-13 Robots</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-18_uni-sexual_school">
+          <div><span class="error-wrong">Such as a boy who wants to learn dancing or a girl who wants to be a PE monitor.</span> → <span class="error-correct">...in co-educational schools, such as a boy who wants to learn dancing or a girl who wants to be a PE monitor.</span></div>
+          <div class="error-rule">规则：such as 引导的举例短语不能独立成句——它是前句的附加成分，应该用逗号并入前一句。独立成句会形成"句子碎片"（sentence fragment），严重影响 GRA 分数</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-18_uni-sexual_school">
+          <div><span class="error-wrong">there are numbers of countries have schools that focus only single sexual</span> → <span class="error-correct">a growing number of countries have established schools that focus exclusively on one sex</span></div>
+          <div class="error-rule">规则：①"there are ... have ..." 双动词粘连——一个句子只能有一个主语+一个谓语结构，不能"there are A 同时 have B"；②"numbers of" 用法错误，应为 "a growing number of"；③"single sexual" 名词化用法不规范</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+        <div class="error-example" data-essay="2026-04-18_uni-sexual_school">
+          <div><span class="error-wrong">students learn their may lack opportunities</span> → <span class="error-correct">students studying in such schools may lack opportunities</span></div>
+          <div class="error-rule">规则：原句 "students learn their may lack" 语法完全错乱——"learn their"无法成立，可能受中文"学习他们的"影响。正确做法是用非谓语短语（studying in such schools）明确修饰对象，避免句子结构坍塌</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 新增：悬挂修饰 / 主语重复 -->
+    <div class="accordion-item" data-essay="2026-04-18_uni-sexual_school">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>悬挂修饰 / 主语重复（Dangling Modifier） <span class="error-count">— 出现 1 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">students studying in a uni-sexual school, they will be more likely to try...</span> → <span class="error-correct">students studying in a uni-sexual school will be more likely to try...</span></div>
+          <div class="error-rule">规则：非谓语短语"students studying in a uni-sexual school"已是完整主语，再加代词"they"就造成了主语重复（悬挂修饰/重复主语）。原则是：非谓语短语作主语时，后面直接跟谓语动词，不再用代词重复指代</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 新增：术语不一致 -->
+    <div class="accordion-item" data-essay="2026-04-18_uni-sexual_school">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <span>术语不一致 / 非标准术语 <span class="error-count">— 出现 4 次</span></span>
+        <span class="arrow">▶</span>
+      </div>
+      <div class="accordion-body">
+        <div class="error-example">
+          <div><span class="error-wrong">single sexual / single sex / uni-sexual</span> → <span class="error-correct">single-sex (统一使用，加连字符)</span></div>
+          <div class="error-rule">规则：描述"单性别学校"的标准术语是 <strong>single-sex</strong>（连字符），全文必须统一使用，不能时而 "single sexual"、时而 "single sex"。术语不一致会给考官"词汇不熟练"的印象</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">bigender school</span> → <span class="error-correct">co-educational school</span></div>
+          <div class="error-rule">规则：bigender 非标准英语词汇——描述"男女合校"应使用 co-educational (school)，这是国际通用术语</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">the opposite gender / the opposite gender people / difference sexual people</span> → <span class="error-correct">the opposite sex / students of different sexes</span></div>
+          <div class="error-rule">规则：标准说法是 "the opposite sex"（不用 gender），描述双方时用 "students of both sexes"。gender 通常指社会性别认同，sex 指生理性别，教育话题用 sex 更恰当</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
+        </div>
+        <div class="error-example">
+          <div><span class="error-wrong">youngest (作名词)</span> → <span class="error-correct">young students</span></div>
+          <div class="error-rule">规则：youngest 是形容词 young 的最高级（最年轻的），不能直接作名词使用。表达"年轻学生"应用 young students 或 youngsters</div>
+          <div class="error-source">来源：<a href="essays/2026-04-18_uni-sexual_school.html">2026-04-18 Uni-sexual School</a></div>
         </div>
       </div>
     </div>
